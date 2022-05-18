@@ -87,11 +87,8 @@ p {
    margin: auto;
    padding:auto;
 }
-  #lapiz{
-   width: 5px;
-   height: 5px;
-    
-  }
 #lapiz:hover{
-  color: black;
+  background-color:grey;
+  border-radius: 25px;
+  width: 20px;
 }

@@ -30,15 +30,20 @@
         <div id="info" style="padding: 16px">
             <img src="descarga.jpg" class="profile-image" alt="profile-image"> <!--aca deberia ir una imagen mia-->
             <div id= "lapiz" class="btn-edit float-end">
-                <a href="#" class="btn-right">
-                    <i class="fa fa-pen" aria-hidden="true" style="color: rgb(39, 34, 34)">
-
-                    </i>
-                </a>
+                
+                <div class="col">
+                    <div id= "lapiz" class="btn-edit float-end"  onclick="Cambiar_Parrafo()">
+                        <i class="fa fa-pen" aria-hidden="true" style="color: rgb(39, 34, 34)"></i>
+                    </div><br>
+                </div>
             </div>
             <div id="info-de"class="col">
                 <h1>Franco Martin Valderrama</h1> 
-                <h3>Full stack developer</h3>
+                <h3 id="titulo">Full stack developer</h3>
+                <div>
+                    <input id="edit-titulo" type="text" style="display:none"
+                    oninput="Definir_Texto(this.value);">
+                  </div>
                 <div id="info-contact">
                     <span>
                         <h3>Buenos Aires (Argentina) 
@@ -62,87 +67,52 @@
     <div id="borde" class="container">
         <b>Experiencia:</b>
         <br>
-        <p id="texto_i">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt odit explicabo quaerat optio iusto accusantium quo sit facere et nam dolore repudiandae error magni rerum, autem at temporibus hic asperiores?</p>
+        <p id="exp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt odit explicabo quaerat optio iusto accusantium quo sit facere et nam dolore repudiandae error magni rerum, autem at temporibus hic asperiores?</p>
         <div>
             <input id="edit-exp" type="text" style="display:none"
-            oninput="Definir_Texto(this.value);">
+            oninput="Definir_Texto2(this.value);">
           </div>
         <div class="col">
-            <div id= "lapiz" class="btn-edit float-end"  onclick="Cambiar_Parrafo()">
+            <div id= "lapiz" class="btn-edit float-end"  onclick="Cambiar_Parrafo2()">
                 <i class="fa fa-pen" aria-hidden="true" style="color: rgb(39, 34, 34)"></i>
             </div><br>
         </div>
     </div>
     <!--Educacion-->
     <div id="borde" class="container">
-        <h2>Educacion:</h2>
+        <b>Educacion:</b>
         <br>
-        <div id="cuadro" class="container">
-            <content>
-                <img src=""> <!--imagen de ort-->
-                <h5 >ORT</h5>
-                <p>Analista en sistemas</p>
-                <div>
-                    <input id="edit-acercade" type="text" style="display:none"
-                    oninput="Definir_Texto(this.value);">
-                  </div>
-                <div class="col">
-                    <div id= "lapiz" class="btn-edit float-end"  onclick="Cambiar_Parrafo()">
-                        <i class="fa fa-pen" aria-hidden="true" style="color: rgb(39, 34, 34)"></i>
-                    </div><br>
-                </div>
-            </content>
-            <content>
-                <img src=""> <!--imagen de argentina programa-->
-                <h5>Argentina Programa</h5>
-                <p>full stack web developer</p>
-                <div>
-                    <input id="edit-acercade" type="text" style="display:none"
-                    oninput="Definir_Texto(this.value);">
-                  </div>
-                <div class="col">
-                    <div id= "lapiz" class="btn-edit float-end"  onclick="Cambiar_Parrafo()">
-                        <i class="fa fa-pen" aria-hidden="true" style="color: rgb(39, 34, 34)"></i>
-                    </div><br>
-                </div>
-            </content>
-            <content>
-                <img src=""> <!--imagen de educacion it-->
-                <h5>educacion it</h5>
-                <p>cursos introductorios</p>
-                <div>
-                    <input id="edit-acercade" type="text" style="display:none"
-                    oninput="Definir_Texto(this.value);">
-                  </div>
-                <div class="col">
-                    <div id= "lapiz" class="btn-edit float-end"  onclick="Cambiar_Parrafo()">
-                        <i class="fa fa-pen" aria-hidden="true" style="color: rgb(39, 34, 34)"></i>
-                    </div><br>
-                </div>
-            </content>
-            <content>
-                <img src=""> <!--imagen de divino corazon-->
-                <h5>divino corazon</h5>
-                <p>estudios secundarios</p>
-                <div>
-                    <input id="edit-acercade" type="text" style="display:none"
-                    oninput="Definir_Texto(this.value);">
-                  </div>
-                <div class="col">
-                    <div id= "lapiz" class="btn-edit float-end"  onclick="Cambiar_Parrafo()">
-                        <i class="fa fa-pen" aria-hidden="true" style="color: rgb(39, 34, 34)"></i>
-                    </div><br>
-                </div>
-            </content>
-            
-            
+        <p id="edu">lorem</p>
+        <div>
+            <input id="edit-edu" type="text" style="display:none"
+            oninput="Definir_Texto3(this.value);">
+          </div>
+        <div class="col">
+            <div id= "lapiz" class="btn-edit float-end"  onclick="Cambiar_Parrafo3()">
+                <i class="fa fa-pen" aria-hidden="true" style="color: rgb(39, 34, 34)"></i>
+            </div><br>
         </div>
     </div>
     <!--habilidades duras y blandas-->
     <div id="borde" class="container">
         <b>Hard skills and softs skills:</b>
         <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda dolore temporibus, at vitae blanditiis facere omnis porro minus cumque error ad, veritatis consectetur illo excepturi quidem culpa sunt iste?</p>
+        <p id="hys">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda dolore temporibus, at vitae blanditiis facere omnis porro minus cumque error ad, veritatis consectetur illo excepturi quidem culpa sunt iste?</p>
+        <div>
+            <input id="edit-hys" type="text" style="display:none"
+            oninput="Definir_Texto4(this.value);">
+          </div>
+        <div class="col">
+            <div id= "lapiz" class="btn-edit float-end"  onclick="Cambiar_Parrafo4()">
+                <i class="fa fa-pen" aria-hidden="true" style="color: rgb(39, 34, 34)"></i>
+            </div><br>
+        </div>
+        <br>
+				<div class="progress">
+				  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+						aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
+				</div>
+				<strong><p class="destacado">Softs Skills</p>
     </div>
     <div id="borde" class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
